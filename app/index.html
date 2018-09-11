@@ -3,80 +3,106 @@
 
 <head>
 
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>Title</title>
-	<meta name="description" content="">
+    <title>Title</title>
+    <meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<header class="container-fluid header">
-		<div id="particles-js"></div>
-		<div class="container header__content">
-			<img src="img/LOGO.png">
-			<h1>Revolutionary </br> dating</h1>
-			<h2>Ico starts in</h2>
-			<div class="countdown"></div>
-			<button class="header__content__button">Buy token</button>
-		</div>
-	</header>
-	<section class="container-fluid main-content" >
-		<div class="container">
+<header class="container-fluid header">
+    <div id="particles-js"></div>
+    <div class="header__content container ">
+        <img src="img/LOGO.png">
+        <h1>Revolutionary </br> dating</h1>
+        <h2>Ico starts in</h2>
+        <div class="countdown"></div>
+        <button class="header__content__button">Buy token</button>
+    </div>
+</header>
+<section class="container-fluid main-content">
+    <div class="container main-content__wrapper">
+        <div class="main-content__wrapper__header">
+            <h2>technology</h2>
+            <h3>our technology</h3>
+        </div>
+        <p>Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six
+            raptures. Conveying concluded newspaper rapturous oh at. Two indeed suffer saw beyond far former mrs remain.
+            Occasional continuing possession we insensible an sentiments as is. Law but reasonably motionless principles
+            she. Has six worse downs far blush rooms above stood.</p>
+        <button class="header__content__button">white paper</button>
+    </div>
+</section>
+<section class="offering container-fluid">
+    
+    <div class="offering__content container">
+        <div class="offering__content__header">
+            <h2>ICO</h2>
+            <h3>Initial <br>
+                coin <br>
+                offering</h3>
+        </div>
+        <p>Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six
+            raptures. Conveying concluded newspaper rapturous oh at. Two indeed suffer saw beyond far former mrs remain.
+            Occasional continuing possession we insensible an sentiments as is. Law but reasonably motionless principles
+            she. Has six worse downs far blush rooms above stood.</p>
+        <img src="img/laptop.png">
+    </div>
+</section>
 
-		</div>
-	</section>
-	<script src="js/scripts.min.js"></script>
-	<script>
-        var countdown = document.querySelector('.countdown');
-        var launchDate = new Date('Jan 1, 2019 13:00:00').getTime();
 
-        // Update every second
-       var x = setInterval( function() {
-            // Set Launch Date (ms)
-           var now = new Date().getTime();
-           var distance = launchDate - now;
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-       // <div><p>${days}</p><p>Days</p></div>
-            countdown.innerHTML = `
+<script src="js/scripts.min.js"></script>
+<script>
+    var countdown = document.querySelector('.countdown');
+    var launchDate = new Date('Jan 1, 2019 00:00:00').getTime();
+
+    // Update every second
+    // var x = setInterval(function () {
+        // Set Launch Date (ms)
+        var now = new Date().getTime();
+        var distance = launchDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // <div><p>${days}</p><p>Days</p></div>
+        countdown.innerHTML = `
 			  <div><p>${hours}</p><p>Hours</p></div>
 			  <div><p>${mins}</p><p>Minutes</p></div>
 			  <div><p>${seconds}</p><p>Seconds</p></div>
 			  `;
-            // If launch date is reached
-            if (distance < 0) {
-                // Stop countdown
-                clearInterval(intvl);
-                // Style and output text
-                countdown.style.color = '#17a2b8';
-                countdown.innerHTML = 'Launched!';
-            }
-       }, 10);
+        // If launch date is reached
+        if (distance < 0) {
+            // Stop countdown
+            clearInterval(intvl);
+            // Style and output text
+            countdown.style.color = '#17a2b8';
+            countdown.innerHTML = 'Launched!';
+        }
+    // }, 10);
 
-	</script>
+</script>
 </body>
 </html>

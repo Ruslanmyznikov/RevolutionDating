@@ -1,27 +1,151 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1320px)
+  .offering__content
+    img
+      left: 56%
+      top: 32%
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .header
+    &__content
+      h1
+        font-size: 76px
 
+  .main-content .main-content__wrapper__header h2
+    font-size: 110px
+
+  .offering__content__header
+    h2
+      font-size: 280px
+
+    h3
+      font-size: 56px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .header
+    &__content
+      h1
+        font-size: 56px
+
+  .main-content .main-content__wrapper__header h2
+    font-size: 76px
+
+  .main-content .main-content__wrapper__header h3
+    font-size: 38px
+
+  .main-content .main-content__wrapper p
+    width: auto
+    padding: 0 40px
+    font-size: 24px
+
+  .offering__content
+    img
+      display: none
+    &__header
+      h2
+        font-size: 220px
+
+      h3
+        font-size: 36px
+        line-height: 59px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .header
+    &__content
+      h1
+        font-size: 36px
+        line-height: 80px
+  .main-content .main-content__wrapper__header h2
+    font-size: 46px
 
+  .main-content .main-content__wrapper__header h3
+    font-size: 26px
+
+  .main-content .main-content__wrapper p
+    font-size: 16px
+    line-height: 40px
+
+  .offering
+    &__content
+      &__header
+        h2
+          font-size: 140px
+          margin: 40px auto
+          text-align: center
+
+        h3
+          font-size: 28px
+          line-height: 35px
+          left: 110px
+          margin-top: 40px
+
+      p
+        margin-left: 0
+        padding: 0 40px
+        margin-top: 60px
+        text-align: justify
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .header
+    &__content
+      h1
+        font-size: 26px
+        line-height: 66px
 
+      &__button
+        width: 280px
 
+      .countdown
+        div
+          min-width: 65px
+          margin: 0 15px
+
+          p
+            &:first-child
+              font-size: 36px
+
+  .main-content .main-content__wrapper__header h2
+    font-size: 35px
+    margin: 0
+
+  .main-content .main-content__wrapper__header h3
+    font-size: 20px
+
+  .main-content .main-content__wrapper
+    padding-top: 0
+
+  .main-content .main-content__wrapper p
+    font-size: 14px
+    line-height: 30px
+
+  .offering
+    &__content
+      &__header
+        h2
+          font-size: 100px
+          margin: 40px auto
+          text-align: center
+
+        h3
+          font-size: 28px
+          line-height: 35px
+          left: 60px
+          margin-top: 50px
+
+      p
+        margin-left: 0
+        padding: 0 40px
+        margin-top: 60px
+        text-align: justify
+        line-height: 34px
+        font-size: 14px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -53,3 +177,6 @@
 @media only screen and (min-width : 1200px)
 	/**/
 
+@media only screen and (min-width : 1320px)
+  .container
+    width: 1320px

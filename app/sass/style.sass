@@ -14,14 +14,20 @@
 
 
 .header
-  height: 100vh
-  background-image: url("../img/BACK.png")
+  min-height: 100vh
+  background: url("../img/BACK.png") center center no-repeat
+  background-size: cover
+  padding-bottom: 40px
+
 
   &__content
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
+    padding-bottom: 40px!important
+
+
 
     img
       z-index: 1400
@@ -88,6 +94,7 @@
       background-color: transparent
       border: solid 4px #3cf6a5
       border-radius: 80px
+      font-size: 18px
       color: white
       text-transform: uppercase
       font-family: 'Roboto', sans-serif
@@ -96,11 +103,106 @@
       margin-top: 80px
       z-index: 1400
       transition: 0.5s
+      outline: none
 
       &:hover
         background-color: #3cf6a5
+        color: #1f115e
 
 
 .main-content
+  //min-height: 110vh
+
+  background: url("../img/second-bg.png") center center no-repeat
+  background-size: cover
+
+  .main-content__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 60px
+    padding-bottom: 120px
+
+    &__header
+      font-family: 'Josefin Sans', sans-serif
+      text-transform: uppercase
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      h2
+        font-size: 144px
+        line-height: 120px
+        letter-spacing: 0.2em
+        text-align: center
+        color: black
+        background: linear-gradient(0deg, #080808 0, #101010 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 40px
+        margin-top: 40px
+
+      h3
+        position: absolute
+        font-size: 48px
+        line-height: 120px
+        letter-spacing: 0.2em
+        background: linear-gradient(90deg, #8EF834 0, #00F4F8 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin: 0
+
+    p
+      width: 845px
+      font-size: 30px
+      line-height: 60px
+      font-family: Roboto
+      font-weight: 300
+      color: white
+      text-align: justify
+
+.offering
+  background-color: #201254
   min-height: 100vh
-  background: url('../img/second-bg.png')
+  margin-top: -30px
+  position: relative
+
+  &__content
+    &__header
+      font-family: "Josefin Sans", sans-serif
+      display: flex
+      align-items: center
+      position: relative
+
+      h2
+        font-size: 360px
+        letter-spacing: 0.2em
+        line-height: 120px
+        margin: 195px 165px
+        color: #301C76
+
+      h3
+        position: absolute
+        font-weight: 300
+        font-size: 72px
+        line-height: 96px
+        letter-spacing: 0.48em
+        color: white
+        text-transform: uppercase
+        left: 155px
+        margin-top: 90px
+
+    p
+      max-width: 485px
+      font-family: Roboto, sans-serif
+      color: white
+      font-size: 18px
+      line-height: 48px
+      margin-left: 155px
+
+    img
+      position: absolute
+      left: 54%
+      top: 25%
+      width: 37.5%
+
