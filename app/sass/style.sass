@@ -1,3 +1,18 @@
+@keyframes fadeInFromNone
+  0%
+    display: none
+    opacity: 0
+
+  1%
+    display: flex
+    opacity: 0
+
+
+  100%
+    display: flex
+    opacity: 1
+
+
 .header
   height: 100vh
   background-image: url("../img/BACK.png")
@@ -39,6 +54,8 @@
       z-index: 1400
       color: white
       display: flex
+      animation: fadeInFromNone 4s ease-out
+
       div
         margin: 0 25px
         padding: 0
@@ -46,6 +63,7 @@
         text-align: center
         display: flex
         flex-direction: column
+
         p
           text-align: center
           margin: 0
@@ -76,7 +94,13 @@
       font-weight: bold
       letter-spacing: 0.2em
       margin-top: 80px
+      z-index: 1400
+      transition: 0.5s
+
+      &:hover
+        background-color: #3cf6a5
 
 
 .main-content
-  height: 441px
+  min-height: 100vh
+  background: url('../img/second-bg.png')
